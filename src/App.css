@@ -1,38 +1,85 @@
-.App {
+* {
+  font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+}
+body {
+  background-color: rgb(250, 250, 232);
+}
+
+header {
+  height: 100px;
+  background: #9c997f;
+}
+.headercss {
+  font-size: 45px;
+  padding-top: 10px;
+  height: 120px;
   text-align: center;
+  text-decoration: underline;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.rounded {
+  align-items: left;
+  margin-right: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#nav {
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  padding-left: 37%;
+  list-style: none;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+#nav li a {
+  display: flex;
+  padding: 8px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(86, 155, 128);
+  border-right: 1px solid #ccc;
+}
+#nav li a:hover {
+  color: rgb(206, 115, 214);
+  background-color: #fff;
+}
+
+#firstnav {
+  border-left: 1px solid #ccc;
+}
+
+.bodycontent {
+  border: 1px solid black;
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  font-size: 20px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+table,
+thead,
+tbody {
+  border: 2px solid black;
+}
+
+.formcss {
+  border: 0.5px solid rgb(171, 173, 240);
+  margin: 0 auto;
+}
+
+form {
+  padding: 20px;
+  text-align: justify;
+}
+
+.searchstyle {
+  width: fit-content;
+  border: 0.5px solid rgb(171, 173, 240);
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  text-align: center;
 }
